@@ -1,0 +1,33 @@
+{
+  "name": "spdr",
+  "version": "0.0.1",
+  "description": "Companies in the S&P 500 and Dow Jones indexes based on SPDR ETF portfolio holdings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitquant/spdr.git"
+  },
+  "keywords": [
+    "S&P 500",
+    "Dow Jones",
+    "companies",
+    "components",
+    "stock",
+    "index",
+    "members"
+  ],
+  "author": "bitquant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitquant/spdr/issues"
+  },
+  "homepage": "https://github.com/bitquant/spdr#readme",
+  "dependencies": {
+    "request": "2.85.0",
+    "request-promise-native": "1.0.5",
+    "xlsx": "0.12.12"
+  }
+}
