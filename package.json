@@ -1,6 +1,6 @@
 {
   "name": "spdr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Companies in the S&P 500 and Dow Jones indexes based on SPDR ETF portfolio holdings",
   "main": "index.js",
   "scripts": {
@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/bitquant/spdr#readme",
   "dependencies": {
-    "request": "2.85.0",
-    "request-promise-native": "1.0.5",
+    "request": "2.88.0",
+    "request-promise-native": "1.0.7",
     "xlsx": "0.12.12"
   }
 }

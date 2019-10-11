@@ -37,7 +37,7 @@ const parseExcelFile = (excelFile) => {
         if ((row.Name !== undefined) && (row.Identifier !== undefined) && (row.Weight !== undefined)) {
 
             const companyInfo = {
-                symbol: row.Identifier,
+                symbol: row.Ticker,
                 name: row.Name,
                 weight: row.Weight
             }
