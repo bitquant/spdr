@@ -39,7 +39,7 @@ const parseExcelFile = (excelFile) => {
             const companyInfo = {
                 symbol: row.Ticker,
                 name: row.Name,
-                weight: row.Weight
+                weight: Number(row.Weight)
             }
 
             if (!companyInfo.symbol.startsWith("CASH_")) {
