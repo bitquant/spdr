@@ -21,7 +21,7 @@ const parseExcelFile = (excelFile) => {
     const workbook = xlsx.read(excelFile);
     const sheetName = workbook.SheetNames[0];
     const sheet = workbook.Sheets[sheetName];
-    const jsonSheet = xlsx.utils.sheet_to_json(sheet, { range: 3 });
+    const jsonSheet = xlsx.utils.sheet_to_json(sheet, { range: 4 });
 
     const indexData = {
         name: sheet.B1.v,
@@ -66,14 +66,12 @@ const fetchIndexCompanies = async (url, fileName, count) => {
 
 const getDowJones = () => {
     return fetchIndexCompanies(
-        "https://www.spdrs.com/site-content/xls/DIA_All_Holdings.xls?fund=DIA&docname=All+Holdings&onyx_code1=1286&onyx_code2=1506",
-        "DIA_All_Holdings.xls", 30);
+        "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-dia.xlsx", 30);
 }
 
 const getSp500 = () => {
     return fetchIndexCompanies(
-        "https://www.spdrs.com/site-content/xls/SPY_All_Holdings.xls?fund=SPY&docname=All+Holdings&onyx_code1=1286&onyx_code2=1700",
-        "SPY_All_Holdings.xls", 500);
+        "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx", 500);
 }
 
 exports.getDowJones = getDowJones;
