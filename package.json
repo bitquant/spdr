@@ -1,6 +1,6 @@
 {
   "name": "spdr",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Companies in the S&P 500 and Dow Jones indexes based on SPDR ETF portfolio holdings",
   "main": "index.js",
   "scripts": {

@@ -30,6 +30,11 @@ const parseExcelFile = (excelFile) => {
         companyList: [ ]
     };
 
+    let date = new Date(indexData.date);
+    let iso = date.toISOString();
+    let dateString = `${iso.slice(5,7)}/${iso.slice(8,10)}/${iso.slice(0,4)}`;
+    indexData.date = dateString;
+
     let rank = 0;
 
     for (let row of jsonSheet) {
