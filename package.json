@@ -28,6 +28,6 @@
   "dependencies": {
     "request": "2.88.0",
     "request-promise-native": "1.0.8",
-    "xlsx": "0.15.4"
+    "xlsx": "0.17.0"
   }
 }
